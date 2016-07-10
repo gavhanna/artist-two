@@ -350,22 +350,22 @@ input:focus {
 }
 
 .social-networks {
-  margin: 80px auto 20px auto;
+  margin: 80px 0 20px 0;
   padding-bottom: 40px;
   border-bottom: 2px solid #999;
   .buttons {
     margin-top: 30px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     a {
-      color: #333;
+      color: #666;
       transition: all .3s ease-in-out;
       &:hover {
         transform: scale(1.2);
         color: skyblue;
       }
       i {
-        margin: 0 20px;
         font-size: 3rem;
       }
     }
