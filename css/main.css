@@ -76,6 +76,10 @@ header {
   header span {
     font-weight: 900;
     color: #555; }
+    header span a {
+      color: #444; }
+      header span a:hover {
+        color: #999; }
   header h1 {
     font-weight: 900;
     font-size: 2rem;
@@ -276,11 +280,11 @@ header {
     border: 2px solid #666;
     border-radius: 4px;
     margin: 10px 20px;
-    transition: all .1s ease-in-out;
+    transition: all .2s ease-in-out;
     padding: 5px 10px; }
     #contact button:hover {
       background-color: skyblue;
-      border: 2px solid white;
+      border: 2px solid skyblue;
       color: white; }
 
 input {
@@ -335,5 +339,23 @@ footer {
 .scotch-is-showing .overlay {
   display: block;
   transition: all 225ms ease; }
+
+.work {
+  max-width: 900px;
+  color: #666;
+  margin-bottom: 50px; }
+  .work h1, .work p, .work h2 {
+    margin: 10px; }
+  .work span {
+    margin: 50px; }
+  .work .image-container {
+    height: 200px;
+    overflow: hidden; }
+    .work .image-container img {
+      width: 100%;
+      margin-bottom: 110px; }
+  @media (max-width: 600px) {
+    .work {
+      text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */

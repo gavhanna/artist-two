@@ -96,6 +96,12 @@ header {
   span {
     font-weight: 900;
     color: #555;
+    a {
+      color: #444;
+      &:hover {
+        color: #999;
+      }
+    }
   }
   h1 {
     font-weight: 900;
@@ -331,11 +337,11 @@ header {
     border: 2px solid #666;
     border-radius: 4px;
     margin: 10px 20px;
-    transition: all .1s ease-in-out;
+    transition: all .2s ease-in-out;
     padding: 5px 10px;
     &:hover {
       background-color: skyblue;
-      border: 2px solid white;
+      border: 2px solid skyblue;
       color: white;
     }
   }
@@ -409,4 +415,30 @@ footer {
 .scotch-is-showing .overlay {
   display: block;
   transition: all 225ms ease;
+}
+
+
+// work pages
+
+.work {
+  max-width: 900px;
+  color: #666;
+  margin-bottom: 50px;
+  h1, p, h2 {
+    margin: 10px;
+  }
+  span {
+    margin: 50px;
+  }
+  .image-container {
+      height: 200px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        margin-bottom: 110px;
+      }
+    }
+  @media (max-width: 600px){
+    text-align: center;
+  }
 }
